@@ -1,6 +1,6 @@
 import random
 
-def play():
+# def play():
     def get_computer_choice():
         options = ['Rock', 'Paper', 'Scissors']
         return random.choice(options)
@@ -24,6 +24,7 @@ def play():
             print("You lost")
         elif computer_choice == "Paper" and user_choice == "Rock":
             print("You lost")
+        # tieing scenarios
         else:
             print("It is a tie!")
 
@@ -32,4 +33,4 @@ def play():
 
     get_winner(computer_choice, user_choice)
 
-play()
+# play()
