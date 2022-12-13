@@ -27,6 +27,9 @@ def play():
         else:
             print("It is a tie!")
 
-    get_winner(get_computer_choice(), get_user_choice())
+    computer_choice = get_computer_choice()
+    user_choice = get_user_choice()
+
+    get_winner(computer_choice, user_choice)
 
 play()
