@@ -50,4 +50,4 @@ No code written in these milestones.
 ## Milestone 3
 Anaconda installed and used to create a virtual environment
 
-![Pic of code so far](/var/folders/m_/g4rczbkd6m75xp9r_bhgm0t80000gn/T/TemporaryItems/NSIRD_screencaptureui_wCxjSK/Screenshot 2022-12-13 at 15.17.47.png)
+![pic of code so far](Screenshot.png)
