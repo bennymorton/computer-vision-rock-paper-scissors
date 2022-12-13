@@ -18,11 +18,11 @@ def get_winner(computer_choice, user_choice):
         print("You won!")
     # computer winning scenarios
     elif computer_choice == "Rock" and user_choice == "Scissors":
-        print("You lost!")
+        print("You lost")
     elif computer_choice == "Scissors" and user_choice == "Paper":
-        print("You lost!")
+        print("You lost")
     elif computer_choice == "Paper" and user_choice == "Rock":
-        print("You lost!")
+        print("You lost")
     else:
         print("It is a tie!")
 
