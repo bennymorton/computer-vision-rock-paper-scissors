@@ -27,7 +27,7 @@ class Game():
             data[0] = normalized_image
             prediction = model.predict(data)
             cv2.imshow('frame', frame)
-            # using the highest probability from image at 5 seconds since function call, 
+            # using the highest probability model from image at 5 seconds since function call, 
             # return either rock, paper or scissors
             if round(time.time()) == start_time + 5:
                 user_choice = np.argmax(prediction)
@@ -83,10 +83,13 @@ class Game():
         # tieing scenarios
         else:
             print("It is a tie!")
+        
+        def play(self):
+            computer_choice = self.get_computer_choice()
+            user_choice = self.get_prediction()
+            self.get_winner(computer_choice, user_choice)
 
 instance = Game()
 
-while instance.computer_wins <= 3 and instance.user_wins <= 3:
-    computer_choice = instance.get_computer_choice()
-    user_choice = instance.get_prediction()
-    instance.get_winner(computer_choice, user_choice)
+while instance.computer_wins < 3 and instance.user_wins < 3:
+    instance.play()
