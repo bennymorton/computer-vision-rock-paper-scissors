@@ -93,3 +93,6 @@ instance = Game()
 
 while instance.computer_wins < 3 and instance.user_wins < 3:
     instance.play()
+
+if instance.computer_wins >= 3 or instance.user_wins >= 3:
+    print('Game over!')
